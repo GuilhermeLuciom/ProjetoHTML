@@ -1,76 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-    <!-- Texto que aparece na aba do navegador e informações sobre o cabeçalho-->
+    
+    <!-- Aba head contém as informações sobre o cabeçalho-->
     <head>
-        <title>Pagina Inicial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Texto que aparece na aba do navegador-->
+        <title>PÁGINA INICIAL</title>
         <meta charset="utf-8">
+    <!-- Aba style é feita em CSS, para modificar os estilos da página-->    
+        <style>
+            body {
+                background-color: #e8e2db;
+                background-size: 100%;
+            }
+            p,h3{
+                width: 60%;
+                text-align: center;
+                color: #1a3263;
+            }
+            ul,li{
+                width: 10%;
+                text-align: center;
+                color: #1a3263;
+            }
+            H5{
+                text-align: center;
+                color: #1a3263;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+                background-color: #fab95b;
+                color: #1a3263;
+            }
+            .rodape{
+                color: aliceblue;
+                background-color:#1a3263;
+                position:fixed;
+                bottom: 0;
+            } 
+            div.cabeçalho{
+                background-color: #fab95b;
+                color: #f16821;
+            } 
+            ul{
+                color: aliceblue;
+                text-align: center;
+            }
+            div.Logo{
+                width: 30%;
+                display: inline-block;
+            }
+            div.Link_superior {
+                text-align:center;
+                display: inline-block;
+            }
+            div.Fund_guilherme, div.Fund_mayara, div.Fund_ricardo, div.Fund_silvia{
+                display:inline-block;
+                text-align: center;
+                width: 20%;
+            }
+            .botao{
+                color: #1a3263;
+                background-color: #f16821;
+                width: 200px;
+                height: 50px;
+                box-shadow: 10px 10px 15px #1a3263;
+                margin: 40px;
+                font-size: 18px;
+            }
+            span{
+                color: #1a3263;
+                font-size: 130%;
+                font-weight: bold;
+            }
+        </style>
     </head>
     
-     <!-- Aba style e feita em CSS feito para modificar os estilos da pagina -->
-     
-    <style>
-        body {
-            background-image: url(img/img.jpg);
-        }
-        h1,p,h3{
-            text-align: center;
-            color: aliceblue;
-        }
-        .rodape{
-            color: aliceblue;
-            background-color: rgb(1, 1, 49);
-            position:fixed;
-            bottom: 0;
-        }  
-        ul{
-            color: aliceblue;
-            text-align: center;
-        }
-    </style>
-    
-    <!-- Aba body e o corpo / conteudo -->
+    <!-- Aba body é o corpo/conteúdo da página-->
     <body>
-    
-        <!-- class criada para armazenar todo o contuedu da pagina -->
+    <!-- Classe "Todo_conteudo" criada para armazenar todo o conteúdo da página-->
         <div class="Todo_conteudo">
-    
-            <!--class criada para armazenar e adiministrar a logo-->
-            <div class="Logo">
-                <div>
-                    <a href="Projectsite.html" target="_self"><img src="img/logo.png" height="200" width="200"></a>
+            <div class="cabeçalho">
+    <!-- Classe "Logo" criada para armazenar e administrar a logo-->
+                 <div class="Logo">
+                    <a href="Projectsite.html" target="_self"><img src="img/logo.gif" height="300" width="300"></a>
+                 </div>
+    <!-- Classe "Link_superior" criada somente para os links superiores do site, apresenta traço do CSS somente 
+    para alinhar o texto ao centro da página com o comando: style="text-aling: center"-->
+                 <div class="Link_superior">
+                    <div style="text-align: center;">
+                        <a href="Projectsitep2.html" target="_self" ><input class="botao" type="button" value="COLABORADORES"></a>
+                        <a href="Projectsitep3.html" target="_self"><input class="botao" type="button" value="CARRINHO"></a>
+                        <a href="Projectsitep4.html" target="_self"><input class="botao" type="button" value="FALE CONOSCO"></a>
+                    </div>
+                 </div>
+    <!-- Classe "Titulo" criada para o título-->
+                <div class="Titulo">
+                        <br>
+                        <h1><center>LOCALIZE SEU COLABORADOR COM A PARCERIA DA <span>CoLabNeT</span></center></h1>
+                        <br>
+                        <hr>
                 </div>
             </div>
-    
-            <!-- class criada somente para os links superiores do site apresenta traso do css somente
-            para alinhar o texto ao cetro da pagina com o comando style="text-aling: center"-->
-            <div class="link_superior">
-                <div style="text-align: center">
-                    <a href="Projectsitep2.html" target="_self" ><img src="img/freelancer.png" height="55" width="200"></a>
-                    <a href="Projectsitep3.html" target="_self"><img src="img/carrinho.png" height="55" width="200"></a>
-                    <a href="Projectsitep4.html" target="_self"><img src="img/faleconosco.png" height="55" width="200"></a>
-                </div>
-            </div>
-            
-            <!-- Class criada para o titulo -->
-            <div class="Titulo">
-                <h1><center>CONTRATE SEU FREELANCER COM A PARCERIA DA WEB.SITE</center></h1>
-            </div>
-
-            <div class="Noticia">
-                <p>NOME SITE é uma plataforma, criada com o intuito de divulgar os alunos dos cursos de graduação na <br>
+    <!-- Classe "Noticia" fica armazenada as informaçôes sobre o site e seu verdadeiro papel-->
+            <p class="Noticia"><center>
+                <p>
+                    <span>CoLabNet</span> é uma plataforma, criada com o intuito de divulgar os alunos dos cursos de graduação na <br>
                     área de Tecnologia da Informação, da Instituição de Ensino Superior: Centro Universitário Estácio <br>
                     de Belo Horizonte. Essa iniciativa surgiu em 2024, da parceria dos então alunos Guilherme Lucio <br>
-                    Manasses, Mayara Franco Pimenta, Ricardo Eduardo Soares Do Espirito Santo e Sílvia Nogueira Rausses,<br>
-                    indo de encontro com a proposta de projeto da disciplina de Desenvolvimento Web em HTML5, CSS,<br>
-                    JAVASCRIPT E PHP, ministrada e orientada pelo Professor Adriano Firmo de Paiva.
-                    <br><br><br><br>
+                    Manasses, Mayara Franco Pimenta, Ricardo Eduardo Soares Do Espirito Santo e Sílvia Nogueira Rausses, <br>
+                    indo de encontro com a proposta de projeto da disciplina de Desenvolvimento Web em HTML5, CSS, <br>
+                    JAVASCRIPT E PHP, ministrada e orientada pelo Professor Adriano Firmo de Paiva.<br>
+                
                 </p>
                 <p>
                     Aqui estarão concentrados alunos de todos os períodos, com diferentes objetivos de carreira, <br>
                     diferentes experiências e perfis, mas que possuem em comum, a porcentagem do CR (Coeficiente de <br>
-                    Rendimento) superior a 70%.
-                    <br><br><br><br>
+                    Rendimento) superior a 80%.
+                    
                 </p>
                 <p>
                     Muito mais do que uma plataforma de divulgação, o site tem o objetivo de oferecer oportunidades.<br>
@@ -79,40 +127,38 @@
                     seja para contratos por CLT, Estágio, Autônomo, CNPJ ou até mesmo aproveitar a plataforma para <br>
                     convidá-los a participarem de algum projeto específico, no qual os alunos poderão agregar sua <br>
                     participação, como atividade extracurricular.
-                    <br><br><br><br>
+
                 </p>
                 <p>
                     A plataforma funciona como um meio de conexão das empresas com os alunos, possui vários filtros <br>
-                    possíveis para facilitar a classificação e seleção por parte dos recrutadores. Havendo interesse <br>
+                    possíveis para facilitar a classificação e seleção por parte dos recrutadores. Havendo interesse<br>
                     em se conectar com um ou mais alunos, os recrutadores podem clicar no botão “Tenho Interesse” e <br>
                     enviar sua proposta ao(s) aluno(s) por meio do preenchimento de um único formulário, podendo até <br>
                     mesmo anexar arquivos. Após essa seleção, o recrutador envia sua solicitação de conexão e aguarda <br>
                     o(s) aluno(s) retornar(em), caso tenha(m) interesse em continuar com as tratativas da proposta. É <br>
                     permitido selecionar vários alunos ao mesmo tempo, para o mesmo formulário preenchido.
-                    <br><br><br><br>
+                    
                 </p>
                 <p>
-                    <h3>Missão</h3>
+                    <h2>Missão</h2>
                     <p>
                         Servir como uma ponte de mão dupla, que liga alunos às milhares de empresas que buscam suprir as <br>
                         necessidades de encontrar profissionais com conhecimentos em Tecnologia. O site é inspirado em <br>
-                        tratar com cuidado, respeito e seriedade os dados dos alunos, conforme a LGPD, além de manter sempre<br>
+                        tratar com cuidado, respeito e seriedade os dados dos alunos, conforme a LGPD, além de manter sempre <br>
                         o comprometimento com a qualidade na seleção dos alunos, que aqui serão divulgados.
-                    <br><br><br><br>
                     </p>
                 </p>
                 <p>
-                    <h3>Visão</h3>
+                    <H2>Visão</H2>
                     <p>
                         Tornar uma plataforma de referência internacional, buscando soluções adequadas e inovadoras para <br>
-                        ontribuir com a conexão entre alunos e empresas que precisam de profissionais da área de Tecnologia <br>
+                        contribuir com a conexão entre alunos e empresas que precisam de profissionais da área de Tecnologia <br>
                         da Informação, além de se tornar um meio de incentivo para que cada vez mais os alunos se qualifiquem <br>
-                        e consigam estar sempre acima de 70% do CR, aqui exigido para sua seleção.
+                        e consigam estar sempre acima de 80% do CR, aqui exigido para sua seleção.
                     </p>
-                    <br><br><br><br>
                 </p>
-                <p>
-                    <h3>Valores</h3>
+                <p><center>
+                    <H2>Valores</H2>
                     <ul type="circle">
                         <li>Ética</li>
                         <li>Honestidade</li>
@@ -124,76 +170,132 @@
                         <li>Cuidado</li>
                         <li>Comprometimento</li>
                     </ul>
-                </p>
-            </div>
-
+                </p></center>
+            </p>
+    <!-- Foi criada uma classe para cada fundador, para poder gerir de forma unitária cada usuário. Mas todos 
+    estão dentro da classe "Fundadores" para comandos gerais-->
             <div class="Fundadores">
-                <h1> FUNDADORES E PRICIPAIS FREELANCER</h1>
-                <div class="Fund_guilherme">
-                    <div style="text-align: center;">
-                        <a href="guilherme.html" target="_blank"><img src="img/Guilherme.png" height="472" width="354"></a>
-                        <p>Descrição sobre o Guilherme conteudo_<br>conteudo_conteudo_conteudo_conteudo<br>_conteudo_conteudo_conteudo_conteudo_conteudo_conteudo_conteudo_
-                         </p>
+                <h1><br>FUNDADORES E PRINCIPAIS FREELANCERS<br><br></h1>
+                <br><br><br><br>
+
+                <div class="Fund_guilherme" >
+                    <div>
+                        <a href="guilherme.html" target="_blank" ><img src="img/Guilherme.png" height="372" width="254"/></a>
+                        <h2><center>Guilherme Lucio</center></h2>
+                        <p><center>
+                            Graduando em Ciências da Computação (Estácio), com previsão 
+                            de formatura no 1º semestre de 2026. Atualmente é Técnico de 
+                            de TI no América Futebol Clube, conta com experiências nas 
+                            áreas de análise de dados, suporte de software, administração 
+                            e manutenção de redes e integração de equipe, para desenvolver 
+                            um trabalho analítico, técnico e de comunicação, com perfil 
+                            produtivo e cooperativo.
+                            
+                        </p></center>
+                         <br><br><br><br><br>
+                         <input class="SELECIONAR" type="submit" value="SELECIONAR" />
                          <br>
                     </div>
                 </div>
+
                 <div class="Fund_mayara">
-                    <div style="text-align: center;">
-                        <a href="mayra.html" target="_blank"><img src="img/Mayara.png" height="472" width="354"></a>
-                        <p>Descrição sobre a Mayra conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo</p>
-                        <br>
+                    <div>
+                        <a href="mayra.html" target="_blank"><img src="img/Mayara.png" height="372" width="254"></a>
+                        <h2><center> Mayara Franco</center></h2>
+                        <p><center>
+                            Graduanda em Ciências da Computação (Estácio), com previsão 
+                            de formatura no 1º semestre de 2026. Atualmente é Estagiária 
+                            em Suporte na SEJUSP, conta com experiências nas áreas de 
+                            negociação, administração, relacionamento interpessoais 
+                            colaborativos e segurança da informação, além de cursos 
+                            complementares em desenvolvimento e programação para desenvolver 
+                            um trabalho cuidadoso e organizado com disciplina e visão lógica.  
+                        </p></center>
+                         <br><br><br><br>
+                         <input class="SELECIONAR" type="submit" value="SELECIONAR" />
+                         <br>
                     </div>
                 </div>
-                <div class="Fund_silvia">
-                    <div style="text-align: center;">
-                        <a href="silvia.html" target="_blank"><img src="img/Silvia.png" height="472" width="354"></a>
-                        <p>Descrição sobre a Silvia conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo</p>
-                        <br>
-                    </div>
-                </div>
+
                 <div class="Fund_ricardo">
-                    <div style="text-align: center;">
-                        <a href="ricardo.html" target="_blank"><img src="img/Ricardo.png" height="472" width="354"></a>
-                        <p>Descrição sobre o Ricardo conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo<br>conteudo_conteudo_conteudo_conteudo</p>
+                    <div>
+                        <a href="ricardo.html" target="_blank"><img src="img/Ricardo.png" height="372" width="254"></a>
+                        <h2><center>Ricardo Eduardo</center></h2>
+                        <p><center>
+                            Graduando em Ciências da Computação (Estácio), com previsão 
+                            de formatura no 2º semestre de 2026. Atualmente é desenvolvedor 
+                            gráfico da @Rick_chees_coner, conta com experiências nas áreas 
+                            de designer, administração e comunicação, além dos cursos 
+                            extracurriculares introdutórios em Java, C#, Python, Banco 
+                            de Dados e HTML, para desenvolver um trabalho criativo e 
+                            persuasivo, com organização e foco nos resultados.
+                        </p></center>
+                        <br><br><br><br>
+                        <input class="SELECIONAR" type="submit" value="SELECIONAR" />
                         <br>
                     </div>
+                </div>
+
+                <div class="Fund_silvia">
+                        <a href="silvia.html" target="_blank"><img src="img/Silvia.png" height="372" width="254"/></a>
+                    <h2><center>Sílvia Rausses</center></h2>
+                    <p><center>
+                        Graduanda em Análise e Desenvolvimento de Sistemas (Estácio), 
+                        com previsão de formatura no 1º semestre de 2025. Pós-graduada 
+                        em MBA em Gestão Estratégica de Negócios (Una - 2017), Graduada 
+                        em Processos Gerenciais (Una - 2015) e Bacharel em Design de 
+                        Moda (FUMEC - 2010). Atualmente é Estagiária em Teste de Software 
+                        na PRODEMGE, conta com experiências nas áreas de gestão empresarial,
+                        designer,metodologia agil e processos de produção, para desenvolver 
+                        um trabalho estratégico, com dedicação na qualidade das entregas e no 
+                        cumprimento de prazos e metas.
+                    </p></center>
+                    <br>
+                    <input class="SELECIONAR" type="submit" value="SELECIONAR" />
+                    <br>
                 </div>
             </div>
-
-            <!--Novos conteudos devem ser colocados acima esse comentario-->
-
+    <!-- Novos conteúdos deverão ser colocados acima deste comentário-->
         </div>
-        <!-- fIM DO CONTEUDO DA PAGINA-->
-
+    <!-- FIM DO CONTEÚDO DA PÁGINA-->
     </body>
     
-    <!-- Aba criada para as informações finais da pagina, sempre se mantera no inferio dela-->
+    <!-- Aba criada para as informações finais da página, sempre se manterá no inferior dela-->
     <section>
-        <!-- qualquer conteudo que deva ser mantido no final da pagina porem antes dos links de movimentação entre paginas 
-        deve ser acressentado logo apos esse comentario-->
-        <!-- Class referente aos links inferiores da pagina-->
+    <!-- Qualquer conteúdo que dêva ser mantido ao final da página, porém antes dos links de movimentação 
+    entre as páginas, deve ser acrescentado logo após este comentário-->
+    <!-- Classe "Final_da_pagina" criada para aos links inferiores da página-->
         <div class="Final_da_pagina">
+            <br><br><br><br>
+
+            <div class="Dados" style="text-align: center;" >
+                <h5>contato@colabnet.com.br</h5>
+                <h5>Endereço: Rua Erê, 207 - Lab 7 Bairro: Prado Cidade: Belo Horizonte</h5>
+                <h5>Telefone : (31) 9 9900-2233</h5>
+            </div>
+
             <div class="link_inferior">
                 <div style="text-align: center">
-                    <a href="Projectsitep2.html" target="_self" ><img src="img/freelancer.png" height="55" width="200"></a>
-                    <a href="Projectsitep3.html" target="_self"><img src="img/carrinho.png" height="55" width="200"></a>
-                    <a href="Projectsitep4.html" target="_self"><img src="img/faleconosco.png" height="55" width="200"></a>
+                    <a href="Projectsitep2.html" target="_self" ><input class="botao" type="button" value="COLABORADORES"></a>
+                    <a href="Projectsitep3.html" target="_self"><input class="botao" type="button" value="CARRINHO"></a>
+                    <a href="Projectsitep4.html" target="_self"><input class="botao" type="button" value="FALE CONOSCO"></a>
                 </div>
             </div>
+            <br><br><br><br><br><br><br><br><br>
         </div>
-        <!-- FIM DA PAGINA-->
+    <!-- FIM DA PÁGINA-->
     </section>
     
-    <!-- Aba referente ao rodape utilizada normalmente para colocar imformaçoes de fontes e construtores do site-->
+    <!-- Aba referente ao rodapé, utilizada normalmente para colocar imformaçÕes de fontes e construtores do site-->
     <footer>
-        <!-- Classe para armazenar e manipular o radape-->
-        <div class="rodape">
-           Fundadores Guilherme / Mayara / Silvia / Ricardo  
+    <!-- Classe "rodape" criada para armazenar e manipular o radapé-->
+        <div class="rodape" style="text-align: right;">
+           Fundadores Guilherme / Mayara / Ricardo / Sílvia
         </div>
-        <!-- FIM DO RODAPE-->
+    <!-- FIM DO RODAPÉ-->
     </footer>
     
-    <!-- FIM DA PAGINA COMPLETA-->
+    <!-- FIM DA PÁGINA COMPLETA-->
     
     
     
